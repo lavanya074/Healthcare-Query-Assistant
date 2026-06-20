@@ -2,9 +2,9 @@ flask==3.0.3
 flask-cors==4.0.1
 python-dotenv==1.0.1
 sentence-transformers==3.0.1
-faiss-cpu==1.8.0
+faiss-cpu
 numpy
 openai==1.40.0
 httpx<0.28
 gunicorn==22.0.0
-python-3.11.9
+
