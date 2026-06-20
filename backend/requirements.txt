@@ -6,3 +6,4 @@ faiss-cpu==1.8.0
 numpy
 openai==1.40.0
 httpx<0.28
+gunicorn==22.0.0
