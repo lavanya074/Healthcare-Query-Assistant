@@ -1,0 +1,67 @@
+/* ============================================================
+   Design tokens
+   A clinical-calm palette: pale sage background, deep pine-teal
+   for authority, warm amber as the single accent. Avoids the
+   generic "cream + terracotta serif" AI-default look by leaning
+   cooler and more muted.
+   ============================================================ */
+:root {
+  --color-bg: #eef2f0;
+  --color-surface: #ffffff;
+  --color-surface-sunken: #e3eae7;
+  --color-primary: #123832;
+  --color-primary-soft: #1f4b44;
+  --color-text: #1b2b28;
+  --color-text-muted: #5c6e69;
+  --color-border: #d4ddd9;
+  --color-accent: #cf9a44;
+  --color-accent-soft: #f3e6c9;
+  --color-danger: #a4453a;
+
+  --font-display: "Fraunces", "Iowan Old Style", serif;
+  --font-body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "faq-001",
+    "category": "Insurance & Claims",
+    "question": "How do I check the status of my insurance claim?",
+    "answer": "You can check your claim status by logging into your insurance member portal and navigating to 'My Claims'. Claims are typically processed within 7-10 business days of submission. If a claim has been pending for more than 14 business days, contact member services with your claim reference number for an update."
+  },
+  {
+    "id": "faq-002",
+    "category": "Insurance & Claims",
+    "question": "What is the difference between a copay and coinsurance?",
+    "answer": "A copay is a fixed dollar amount you pay for a covered service at the time you receive it, such as $20 for a doctor visit. Coinsurance is a percentage of the cost of a service that you pay after you've met your deductible, such as 20% of the total bill. Both are forms of cost-sharing, but copays are flat fees while coinsurance scales with the cost of care."
+  },
+  {
+    "id": "faq-003",
+    "category": "Insurance & Claims",
+    "question": "How do I find an in-network doctor?",
+    "answer": "Use the 'Find Care' tool in your member portal or mobile app and filter by specialty, location, and your specific plan network. Always confirm network status directly with the provider's office before your appointment, since networks can change."
+  },
+  {
+    "id": "faq-004",
+    "category": "Prescriptions",
+    "question": "How do I refill a prescription through mail order?",
+    "answer": "Log into your pharmacy benefits account, select the prescription you want to refill, and choose mail order delivery. Refills typically arrive within 7-10 business days. For maintenance medications, you can also set up auto-refill so prescriptions are shipped automatically before you run out."
+  },
+  {
+    "id": "faq-005",
+    "category": "Prescriptions",
+    "question": "Why was my prescription not covered by insurance?",
+    "answer": "A prescription may not be covered if it is not on your plan's formulary (the list of covered drugs), if a generic alternative is required first (step therapy), or if your doctor needs to submit a prior authorization. Check your plan's formulary online or call member services to find the reason for your specific case."
+  },
+  {
+    "id": "faq-006",
+    "category": "Prescriptions",
+    "question": "What is a formulary?",
+    "answer": "A formulary is the list of prescription drugs covered by your health plan. Drugs are usually organized into tiers, where lower tiers (like generics) cost less out-of-pocket than higher tiers (like brand-name or specialty drugs). Your formulary can change annually, so it's worth checking each plan year."
+  },
+  {
+    "id": "faq-007",
+    "category": "Benefits & Coverage",
+    "question": "What is a deductible and how does it work?",
+    "answer": "A deductible is the amount you must pay out-of-pocket for covered services before your insurance starts paying. For example, with a $1,000 deductible, you pay the first $1,000 of covered care yourself, after which your plan begins sharing costs through copays or coinsurance. Preventive care is often covered before the deductible is met."
+  },
+  {
+    "id": "faq-008",
+    "category": "Benefits & Coverage",
+    "question": "Are annual physical exams covered by insurance?",
+    "answer": "Most health plans cover one annual preventive physical exam at no cost to you, even if you haven't met your deductible, as required under preventive care provisions. This typically includes routine screenings, but additional tests ordered during the visit may be billed separately depending on your plan."
+  },
+  {
+    "id": "faq-009",
+    "category": "Benefits & Coverage",
+    "question": "What is the out-of-pocket maximum?",
+    "answer": "The out-of-pocket maximum is the most you will have to pay for covered services in a plan year. Once you reach this limit through deductibles, copays, and coinsurance, your insurance pays 100% of covered costs for the rest of the year. Premiums do not count toward this maximum."
+  },
+  {
+    "id": "faq-010",
+    "category": "Telehealth",
+    "question": "How do I schedule a telehealth appointment?",
+    "answer": "Open your health plan's app or member portal, select 'Schedule Telehealth Visit', choose your reason for the visit and preferred provider type, and pick an available time slot. You'll receive a link to join the video call a few minutes before your appointment."
+  },
+  {
+    "id": "faq-011",
+    "category": "Telehealth",
+    "question": "Is telehealth covered the same as an in-person visit?",
+    "answer": "Most plans cover telehealth visits at a similar or lower copay than in-person visits for the same type of care. Coverage can vary by state and by the specific service, so check your plan documents or the telehealth section of your member portal for exact cost details."
+  },
+  {
+    "id": "faq-012",
+    "category": "Wellness Programs",
+    "question": "How do I enroll in a wellness or disease management program?",
+    "answer": "Wellness and disease management programs, such as diabetes or weight management coaching, can usually be joined through the 'Health Programs' section of your member portal. Some programs are automatically recommended based on your claims history, and enrollment is voluntary and confidential."
+  },
+  {
+    "id": "faq-013",
+    "category": "Wellness Programs",
+    "question": "Do I get rewards for completing health assessments?",
+    "answer": "Many plans offer incentive programs where completing a health risk assessment, biometric screening, or wellness activity earns points or gift card rewards. Check the 'Rewards' tab in your member portal to see available activities and your current point balance."
+  },
+  {
+    "id": "faq-014",
+    "category": "Account & Access",
+    "question": "I forgot my member portal password. How do I reset it?",
+    "answer": "Click 'Forgot Password' on the login page and enter your registered email address. You'll receive a reset link valid for 30 minutes. If you no longer have access to that email, contact member services to verify your identity and update your account."
+  },
+  {
+    "id": "faq-015",
+    "category": "Account & Access",
+    "question": "How do I add a dependent to my health plan?",
+    "answer": "Dependents can typically be added during open enrollment or within 30 days of a qualifying life event, such as marriage or the birth of a child. Log into the member portal, go to 'Manage Dependents', and submit the required documentation, such as a birth certificate or marriage license."
+  }
+]

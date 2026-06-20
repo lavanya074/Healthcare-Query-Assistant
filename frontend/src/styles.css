@@ -1,0 +1,281 @@
+.app-shell {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+/* ---------------- Sidebar ---------------- */
+.sidebar {
+  background: var(--color-primary);
+  color: #eef2f0;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar-brand {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.25;
+}
+
+.sidebar-tagline {
+  font-size: 13px;
+  color: #b9cac5;
+  margin-top: 6px;
+}
+
+/* Signature element: a single restrained EKG/pulse divider line that
+   ties the visual identity to the healthcare subject matter. Used once. */
+.pulse-divider {
+  width: 100%;
+  height: 22px;
+  overflow: hidden;
+}
+
+.pulse-divider path {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+  animation: draw-pulse 2.4s ease-out forwards;
+}
+
+@keyframes draw-pulse {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.sidebar-section-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8fa8a1;
+  margin-bottom: 10px;
+}
+
+.category-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.category-button {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 1px solid transparent;
+  color: #d7e4e0;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.category-button:hover {
+  background: rgba(238, 242, 240, 0.08);
+  border-color: rgba(238, 242, 240, 0.15);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  font-size: 12px;
+  color: #8fa8a1;
+  line-height: 1.5;
+  border-top: 1px solid rgba(238, 242, 240, 0.12);
+  padding-top: 16px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.status-dot.online {
+  background: #6fbf8b;
+}
+
+.status-dot.offline {
+  background: var(--color-danger);
+}
+
+/* ---------------- Main chat column ---------------- */
+.chat-column {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-header {
+  padding: 18px 28px;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.chat-header h1 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.chat-header p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.empty-state {
+  margin: auto;
+  max-width: 420px;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.empty-state h2 {
+  font-family: var(--font-display);
+  color: var(--color-text);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+/* ---------------- Message bubbles ---------------- */
+.message-row {
+  display: flex;
+  max-width: 680px;
+}
+
+.message-row.user {
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+.message-row.assistant {
+  align-self: flex-start;
+}
+
+.bubble {
+  padding: 12px 16px;
+  border-radius: var(--radius-lg);
+  font-size: 14.5px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+.bubble.user {
+  background: var(--color-primary);
+  color: #f1f5f3;
+  border-bottom-right-radius: var(--radius-sm);
+}
+
+.bubble.assistant {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-bottom-left-radius: var(--radius-sm);
+}
+
+.bubble.loading {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.sources {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--color-border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.source-chip {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background: var(--color-accent-soft);
+  color: #6b4f1d;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+/* ---------------- Input bar ---------------- */
+.chat-input-bar {
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: 16px 28px 22px;
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input-bar input {
+  flex: 1;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  font-size: 14.5px;
+  font-family: var(--font-body);
+  background: var(--color-surface-sunken);
+}
+
+.chat-input-bar input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.send-button {
+  background: var(--color-primary);
+  color: #f1f5f3;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 0 22px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.send-button:hover:not(:disabled) {
+  background: var(--color-primary-soft);
+}
+
+.send-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.disclaimer {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 0 28px 14px;
+}
