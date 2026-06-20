@@ -206,6 +206,8 @@ Response:
 ```
 
 ---
+<img width="1912" height="905" alt="image" src="https://github.com/user-attachments/assets/e8672b0a-663d-479a-932e-3a1dceeeb1bc" />
+
 
 ## Notes on the knowledge base
 
